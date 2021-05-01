@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+html, body, div, span, applet, object, iframe,
+h1, h2, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+img{
+  width: 250px;
+  height:auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-size: 40px;
+  font-family:monospace;
+  color: aliceblue;
+  border: turquoise 3px solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2{
+  font-size: 40px;
+  font-family: monospace;
+  margin-top: 10px;
+}
+
+p{
+  font-size: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+input{
+  margin-top: 20px;
+  height: 40px;
+  width: 200px;
+}
+
+
+header{
+  background-color: black;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 140px;
+  z-index: 1;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+#addButton{
+margin-top: 30px;
+width: 200px;
+height: 50px;
+margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.game{
+  display: flex;
+  padding: 60px;
+  width: fit-content;
+  flex-direction: row;
+  float: right;
 }
+
+
+.addgame{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid black 2px;
+  height: inherit;
+  width: 250px;
+  position: fixed;
+ margin-left: 5px;
+ margin-top: 10px;
+}
+
+body{
+  background-image: url(https://stillmed.olympic.org/media/Images/OlympicOrg/News/2020/03/24/2020-03-24-tokyo-thumbnail-01.jpg);
+}
+  
