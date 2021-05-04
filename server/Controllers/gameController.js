@@ -1,9 +1,9 @@
 let games = [
     {
         id: 0,
-        title: 'Valorant',
-        hours: 1800,
-        image: 'https://www.riotgames.com/darkroom/1440/d0807e131a84f2e42c7a303bda672789:3d02afa7e0bfb75f645d97467765b24c/valorant-offwhitelaunch-keyart.jpg'
+        title: 'Example',
+        hours: 0,
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1TW9qdczZ4HalPD4lDMxIH8zjdQbiO2LPljfwAbVTw113a3YCl7E7bHrbCrtQvKdZ03I&usqp=CAU'
 
     }
 ]

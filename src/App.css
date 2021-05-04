@@ -19,6 +19,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+button{
+  font-family:monospace;
+  margin: 5px;
+}
+
+input{
+  font-family:monospace;
+}
 
 img{
   width: 250px;
@@ -30,6 +38,7 @@ h1{
   font-family:monospace;
   color: aliceblue;
   border: turquoise 3px solid;
+  padding: 10px;
 }
 
 h2{
@@ -38,10 +47,20 @@ h2{
   margin-top: 10px;
 }
 
+h3{
+  font-size: 30px;
+  font-family: monospace;
+  margin-top: 10px;
+  color: white;
+  padding: 20px;
+}
+
 p{
   font-size: 20px;
+  font-family:monospace;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
+  background-color: white;
 }
 
 input{
@@ -50,33 +69,43 @@ input{
   width: 200px;
 }
 
-
 header{
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 140px;
-  z-index: 1;
- 
-}
+}  
 
 #addButton{
-margin-top: 30px;
-width: 200px;
-height: 50px;
-margin-bottom: 40px;
+  margin-top: 30px;  
+  width: 200px;
+  height: 50px;
+  margin-bottom: 40px;
 }
 
+.GameContainer{
+  background-image: url(https://stillmed.olympic.org/media/Images/OlympicOrg/News/2020/03/24/2020-03-24-tokyo-thumbnail-01.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  height: 100vh;
+  
+}
 
 .game{
-  display: flex;
-  padding: 60px;
-  width: fit-content;
-  flex-direction: row;
-  float: right;
-}
+  padding: 25px;
+}  
 
+.games{
+  /* background-color: rebeccapurple; */
+  max-width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
 
 .addgame{
   display: flex;
@@ -84,14 +113,29 @@ margin-bottom: 40px;
   justify-content: flex-start;
   align-items: center;
   border: solid black 2px;
-  height: inherit;
+  border-radius: 25%;
   width: 250px;
   position: fixed;
- margin-left: 5px;
- margin-top: 10px;
-}
+  margin-left: 10px;
+  margin-top: 10px;
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+} 
 
-body{
-  background-image: url(https://stillmed.olympic.org/media/Images/OlympicOrg/News/2020/03/24/2020-03-24-tokyo-thumbnail-01.jpg);
-}
-  
+.addGameDiv{
+  /* background-color: red; */
+  width: 15vw;
+  position: relative;
+}  
+
+.sum{
+  background-color:black;
+  position: fixed;
+  height: 10vh;
+  bottom: 30px;
+  left:41.5vw;
+}  
+
+
+

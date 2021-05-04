@@ -38,11 +38,12 @@ class AddGame extends Component{
 
 
     render() {
-        return(<div>
+        return(<div className="addgame">
+            <h2>Add Game </h2>
+            <input value={this.state.image} onChange={(e) => this.handleImage(e.target.value)} placeholder='Enter Image URL'/>
             <input value={this.state.title} onChange={(e) => this.handleTitle(e.target.value)} placeholder="Enter Title"/>
             <input value={this.state.hours} onChange={(e) => this.handleHours(e.target.value)} placeholder='Enter Hours'/>
-            <input value={this.state.image} onChange={(e) => this.handleImage(e.target.value)} placeholder='Enter Image URL'/>
-            <button onClick={this.handleAdd}>Add Game</button>
+            <button id="addButton" onClick={this.handleAdd}>Add Game</button>
         </div>)
     }
 }

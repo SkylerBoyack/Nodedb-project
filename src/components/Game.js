@@ -28,16 +28,16 @@ class Game extends Component{
         return this.state.editMode ? (
             <div className="game">
                 <input value={this.state.hours}
-                onChange={(e)=> this.handleHours(e.target.value)} />
+                onChange={(e)=> this.handleHours(e.target.value)} placeholder="edit hours"/>
                 <button onClick={this.handleSave}>Save</button>
             </div>
-        ) : (  <div className="game"> 
+        ) : (  <div className="game"> <body>
                  <img src={this.props.game.image} alt={this.props.game.title}/>
                     <p>{this.props.game.title}</p>    
-                    <p>{this.props.game.hours}</p>    
+                    <p>Hours Played: {this.props.game.hours}</p>    
                     <button onClick={() => this.props.deleteGame(this.props.game.id)}>Delete Game</button>
                     <button onClick={this.toggleEdit}>Edit</button>  
-                    </div>
+                    </body>  </div>
         )
     }
 }

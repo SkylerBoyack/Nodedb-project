@@ -1,8 +1,7 @@
 
-
 function Header(){
     return (
-        <header><h1>GameList</h1></header>
+        <header><h1>Game List</h1></header>
     )
 };
 

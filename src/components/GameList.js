@@ -2,6 +2,8 @@ import  {Component} from 'react'
 import axios from 'axios'
 import AddGame from './AddGame'
 import Game from './Game'
+import HourCounter from './HourCounter'
+
 
 class GameList extends Component{
     constructor(){
@@ -50,16 +52,24 @@ class GameList extends Component{
     
      render(){
         return (
-            <div>
+            <div className="GameContainer">
+                <div className="addGameDiv">
                 <AddGame
                 addGame={this.addGame}/>
+                </div>
+                <div className="games">
                 {this.state.gamesArray.map((game) => {
                     return( 
                     <Game 
                     game={game} 
                     deleteGame={this.deleteGame} 
                     editHours={this.editHours}/>)
-                })}
+                })} </div>
+                <div className="hrSum">
+                <HourCounter
+                gamesArray={this.state.gamesArray}
+                />
+                </div>
             </div>
         )
     }
